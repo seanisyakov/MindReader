@@ -1,0 +1,94 @@
+{"questions":[
+
+    {"premise":"Red is a colour",
+    "answer":"True"},
+
+    {"premise":"John Lennon died in 1981",
+    "answer":"False"},
+
+    {"premise":"The Capital City of Canada is Quebec",
+    "answer":"False"},
+
+    {"premise":"Math is a common subject in American elementary school",
+    "answer":"True"},
+
+    {"premise":"There are Amazonan rainforests in Zambia",
+    "answer":"False"},
+
+    {"premise":"With the axiom of choice in consideration, every infinite dimensional locally compact vector space has a hammel basis",
+    "answer":"True"},
+
+    {"premise":"The telencephalon develops from the neural tube",
+    "answer":"True"},
+
+    {"premise":"Dolphins are reptiles",
+    "answer":"False"},
+
+    {"premise":"Buffalo is the Capital city of New York state",
+    "answer":"False"},
+
+    {"premise":"14 x 54 = 736",
+    "answer":"False"},
+
+    {"premise":"World War II began in 1941",
+    "answer":"True"},
+
+    {"premise":"Mushrooms are part of the plant kingdom",
+    "answer":"False"},
+
+    {"premise":"China is the largest country in Asia by landmass",
+    "answer":"False"},
+
+    {"premise":"Albert Einstein was born in Germany",
+    "answer":"True"},
+
+    {"premise":"Adolf Hitler was born in Germany",
+    "answer":"False"},
+
+    {"premise":"Joseph Stalin was born in Russia",
+    "answer":"False"},
+
+    {"premise":"11 x 54 = 594",
+    "answer":"True"},
+
+    {"premise":"The work of Alan Turing helped to decrypt Nazi telegraph messages during WWII",
+    "answer":"True"},
+
+    {"premise":"248 / 62 = 4",
+    "answer":"True"},
+
+    {"premise":"284 / 4 = 62",
+    "answer":"False"},
+
+    {"premise":"Carnegie Mellon University was founded in the year 1910",
+    "answer":"False"},
+
+    {"premise":"Massachusettes Institute of Technology resides in Cambridge, MA",
+    "answer":"True"},
+
+    {"premise":"The Tango dance style originated in the city of Buenos Aires",
+    "answer":"True"},
+
+    {"premise":"32 / 8 = 16",
+    "answer":"False"},
+
+    {"premise":"Kelly Clarkson was the season one winner of American Idol",
+    "answer":"False"},
+
+    {"premise":"(32 / 8) * 16 = 426",
+    "answer":"False"},
+
+    {"premise":"(32 / 8) * 16  + (40 * 3)= 184",
+    "answer":"True"},
+
+    {"premise":"(32 / 8) * 16  + (40 * 3)= 183",
+    "answer":"False"},
+
+    {"premise":"Subra Suresh was in charge of the budget for the National Science Foundation in 2008.",
+    "answer":"False"},
+
+    {"premise":"Hannah Montana was a popular kids show on Nickolodeon.",
+    "answer":"False"}
+
+]}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- from https://jqueryui.com/slider/#default -->
+
+    <meta charset="utf-8">
+
+
+    <!-- slider -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The meta tags here came from the bootstrap website -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- This meta tag passes questions to javascripts -->
+    <meta id="my-data" data-name="{{questions}}">
+    {% set selected_question = questions|random %}
+    <meta id="question" data-name="{{selected_question}}">
+
+    <title> Mindreader -- The Game </title>
+
+    <!-- Bootstrap core CSS from the website-->
+
+    <!-- I made gameplay.css from the cover example in the bootstrap website -->
+    <link rel= "stylesheet" type ="text/css" href= "../static/gameplay.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- TimeCircles: https://github.com/wimbarelds/TimeCircles -->
+    <script type="text/javascript" src="static/js/TimeCircles.js"></script>
+    <link href="static/css/TimeCircles.css" rel="stylesheet">
+    
+
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          
+          <div class="row">
+                
+                
+          </div>
+
+          <div id="prompt">
+
+            <div id="premise" class="row">
+              <h2> Premise: {{selected_question['premise']}}</h2>
+            </div>
+
+
+            <!-- row for conclusion -->
+            <div id="conclusion" class="row">
+              <h2> Conclusion: {{selected_question['conclusion']}}</h2>
+            </div>
+          </div>
+
+          <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+          <div class="row transl">
+            <h1 id="slideView"> 50 </h1>
+          </div>
+
+          <!-- row for slider -->
+          <div class="row">
+            <div id="slider"></div>
+          </div>
+
+          <!-- http://git.wimbarelds.nl/TimeCircles/ -->
+          <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div id=clock_styles transl class="row">
+            <div id="DateCountdown" data-timer="1000" style="width: 100%;"></div>
+          </div>
+          <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+          <div class="row">
+            <button id="submit" type="button" class="btn-lg btn-default">Submit</button>
+          </div>
+           <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div class="row">
+            <a href="/">
+              <button type="button" class="btn-xs btn-default">End Game</button>
+            </a>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript / helps with setting up with javascript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src = "static/index.js"></script>
+    <script>
+      $(function() {
+        $("#slider").slider();
+      });
+    </script>
+
+  </body>
+</html>

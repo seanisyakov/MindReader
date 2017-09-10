@@ -1,0 +1,72 @@
+
+{"questions":[
+    {"logical_id":"a-S->a+S", "premise":"Audience Member < answered False to Question #",
+    "conclusion":"Audience Member < believes the answer to Question Number # to be True"},
+
+    {"logical_id":"a-S->auS", "premise":"Audience Member < answered False to Question #",
+    "conclusion":"Audience Member < is uncertain whether Question Number # is True or False"},
+
+    {"logical_id":"+S->-S", "premise":"The answer to Question # is True",
+    "conclusion":"The Answer to Question # is False"}, 
+
+    {"logical_id":"a+S->a-S", "premise":"Audience Member < answered True to Question #",
+    "conclusion":"Audience Member < believes the answer to Question Number # to be False"},
+
+    {"logical_id":"a+S->auS", "premise":"Audience Member < answered True to Question #",
+    "conclusion":"Audience Member < is uncertain whether Question Number # is True or False"},
+
+    {"logical_id":"-S->a+S", "premise":"The answer to Question # is False",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be True"},
+
+    {"logical_id":"+S->a-S", "premise":"The answer to Question # is True",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be False"},
+
+    {"logical_id":"auS->a+S", "premise":"Audience Member < chose not to answer Question Number #",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be True"},
+
+    {"logical_id":"auS->a-S", "premise":"Audience Member < chose not to answer Question Number #",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be False"},
+
+    {"logical_id":"a-S->+S", "premise":"Audience Member < answered False to Question #",
+    "conclusion": "The Answer to Question # is True"},
+
+    {"logical_id":"a+S->-S", "premise":"Audience Member < answered True to Question #",
+    "conclusion": "The Answer to Question # is False"},
+
+    {"logical_id":"auS->-S", "premise":"Audience Member < chose not to answer Question Number #",
+    "conclusion": "The answer to Question # is False"},
+
+    {"logical_id":"+S->auS", "premise":"The answer to Question # is True",
+    "conclusion": "Audience Member < is uncertain whether Question Number # is True or False"},
+
+    {"logical_id":"auS->+S", "premise":"Audience Member < chose not to answer Question Number >",
+    "conclusion": "The Answer to Question # is True"},
+
+    {"logical_id":"-S->auS", "premise":"The answer to Question # is False",
+    "conclusion": "Audience Member < is uncertain whether Question Number # is True or False"},
+
+    {"logical_id":"+S->a+S", "premise":"The answer to Question # is True",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be True"},
+
+    {"logical_id":"-S->a-S", "premise":"The answer to Question # is False",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be False"},
+
+    {"logical_id":"a+S->+S", "premise":"Audience Member < answered True to Question #",
+    "conclusion": "The answer to Question # is True"},
+
+    {"logical_id":"a-S->-S", "premise":"Audience Member < answered False to Question #",
+    "conclusion": "The answer to Question # is False"},
+
+    {"logical_id":"a+S->a+S", "premise":"Audience Member < answered True to Question #",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be True"},
+
+    {"logical_id":"a-S->a-S", "premise":"Audience Member < answered False to Question #",
+    "conclusion": "Audience Member < believes the answer to Question Number # to be False"},
+
+    {"logical_id":"-S->-S", "premise":"The answer to Question # is False",
+    "conclusion": "The answer to Question # is False"},
+
+    {"logical_id":"+S->+S", "premise":"The Answer to Question # is True",
+    "conclusion": "The answer to Question # is True"}
+
+]}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- from https://jqueryui.com/slider/#default -->
+
+    <meta charset="utf-8">
+
+
+    <!-- slider -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The meta tags here came from the bootstrap website -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- This meta tag passes questions/ selected question to javascripts -->
+    {% set selected_question = questions|random %}
+    <meta id="my-data" data-name="{{questions}}">
+    <meta id="question" data-name="{{selected_question}}">
+
+
+    <title> Mindreader -- The Game </title>
+
+    <!-- Bootstrap core CSS from the website-->
+
+    <!-- I made gameplay.css from the cover example in the bootstrap website -->
+    <link rel= "stylesheet" type ="text/css" href= "../static/begin.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          
+          <div class="row" id="initPrompt">
+            <p class="lead" style= "color: navajowhite;">  Use your beliefs about the world to respond true or false to the following questions. If you believe the answer of the question to be true, submit the answer as true. If you believe the answer to be false-- vice-versa. If you uncertain about the answer, simply skip the question, and you will not have any points deducted. </p>
+          </div>
+          <div class="row" id="secondPrompt">
+            <p class="lead" style= "color: navajowhite;">  Congratulations! You, and another random audience member, 
+      won enough points to be selected to go on stage and help each other win money!! 
+Without worrying too much about what your partner might put down, your 
+job is to give the most accurate probability that a given statement is true 
+based on the information that you are given as a hint in your terminal.  Many of the answers will be very straight forward. You will have 15 
+seconds to answer each question. Assume no one in the audience makes mistakes-- (all of their answers are deliberate) Good Luck! </p>
+         
+          </div>
+
+          <div id="prompt">
+
+            <div class="row" >
+              <h1 id="premise">Question: {{selected_question['premise']}}</h1>
+            </div>
+
+
+            <!-- row for question -->
+  
+          </div>
+
+          <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+          <!-- row for slider -->
+          
+          <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          <div id="buttonOptions" class="row">
+            <button id="true" type="button" class="btn-lg btn-default" style="color:Green">True</button>
+            <button id="false" type="button" class="btn-lg btn-default" style="color:firebrick">False</button>
+            <button id="skip" type="button" class="btn-lg btn-default" style="color:deepskyblue;">Skip</button>
+          </div>
+           <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+          <div id="start">
+            <a href="/gaming">
+              <button type="button" class="btn-lg btn-success btn-block">Start!</button>
+            </a>
+          </div>
+          <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+          <div class="row">
+            <a href="/">
+              <button type="button" class="btn btn-danger-outline">End Game</button>
+            </a>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript / helps with setting up with javascript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src = "static/js/primer.js"></script>
+    
+  </body>
+</html>
